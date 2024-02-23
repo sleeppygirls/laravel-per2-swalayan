@@ -16,8 +16,6 @@ return new class extends Migration
             $table->date('date')->nullable();
             $table->string('id_user')->nullable();
             $table->string('id_customer')->nullable();
-            $table->double('discount')->default(0);
-            $table->double('total')->default(0);
             $table->timestamps();
         });
     }

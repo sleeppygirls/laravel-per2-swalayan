@@ -14,8 +14,10 @@ return new class extends Migration
         Schema::create('detail_transactions', function (Blueprint $table) {
             $table->id();
             $table->string('nota')->nullable();
-            $table->string('id_barang')->nullable();
+            $table->string('id_stuff')->nullable();
             $table->integer('count')->default(0);
+            $table->double('price')->default(0);
+            $table->double('discount')->default(0);
             $table->timestamps();
         });
     }

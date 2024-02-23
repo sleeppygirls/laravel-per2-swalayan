@@ -18,7 +18,5 @@ class Transaction extends Model
         'date',
         'id_user',
         'id_customer',
-        'discount',
-        'total'
     ];
 }

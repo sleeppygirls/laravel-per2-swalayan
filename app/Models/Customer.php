@@ -17,7 +17,7 @@ class Customer extends Model
         'id',
         'name',
         'address',
-        'sex',
+        'gender',
         'status'
     ];
 }

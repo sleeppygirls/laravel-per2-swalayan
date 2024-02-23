@@ -16,7 +16,9 @@ class DetailTransaction extends Model
     protected $fillable = [                     // nama kolom yang dapat di edit
         'id',
         'nota',
-        'id_barang',
-        'count'
+        'id_stuff',
+        'count',
+        'price',
+        'discount',
     ];
 }
