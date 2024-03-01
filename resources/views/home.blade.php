@@ -11,12 +11,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Dashboard v2</h1>
+                    <h1 class="m-0">Home</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Dashboard v2</li>
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active">Queen Swalayan</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -31,13 +31,13 @@
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box">
-                        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
+                        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-box-open fa-fw"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">CPU Traffic</span>
+                            <span class="info-box-text">Item</span>
                             <span class="info-box-number">
-                                10
-                                <small>%</small>
+                                100++
+                                {{-- <small>%</small> --}}
                             </span>
                         </div>
                         <!-- /.info-box-content -->
@@ -50,7 +50,7 @@
                         <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-thumbs-up"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">Likes</span>
+                            <span class="info-box-text">Review</span>
                             <span class="info-box-number">41,410</span>
                         </div>
                         <!-- /.info-box-content -->
@@ -64,10 +64,10 @@
 
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box mb-3">
-                        <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
+                        <span class="info-box-icon bg-success elevation-1"><i class="fab fa-shopify fa-fw"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">Sales</span>
+                            <span class="info-box-text">Penjualan</span>
                             <span class="info-box-number">760</span>
                         </div>
                         <!-- /.info-box-content -->
@@ -77,10 +77,10 @@
                 <!-- /.col -->
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box mb-3">
-                        <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
+                        <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-user-check fa-fw"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">New Members</span>
+                            <span class="info-box-text">Members</span>
                             <span class="info-box-number">2,000</span>
                         </div>
                         <!-- /.info-box-content -->

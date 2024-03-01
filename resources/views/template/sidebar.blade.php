@@ -15,7 +15,7 @@
                   <img src="/admin/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
               </div>
               <div class="info">
-                  <a href="/" class="d-block">Putri's Swalayan</a>
+                  <a href="/" class="d-block">Queen Swalayan</a>
               </div>
           </div>
 
@@ -39,8 +39,8 @@
                   <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                   <li class="nav-item">
-                      <a href="pages/widgets.html" class="nav-link">
-                          <i class="nav-icon fas fa-th"></i>
+                      <a href="/" class="nav-link">
+                          <i class="nav-icon fas fa-store fa-fw" style="color: #B5565D"></i>
                           <p>
                               Beranda
                               {{-- <span class="right badge badge-danger">New</span> --}}
@@ -49,7 +49,7 @@
                   </li>
                   <li class="nav-item">
                       <a href="#" class="nav-link">
-                          <i class="nav-icon fas fa-copy"></i>
+                          <i class="nav-icon fas fa-money-bill-alt fa-fw" style="color: #197800"></i>
                           <p>
                               Transaksi
                               <i class="fas fa-angle-left right"></i>
@@ -58,21 +58,21 @@
                       </a>
                       <ul class="nav nav-treeview">
                           <li class="nav-item">
-                              <a href="/transaction/add" class="nav-link">
-                                  <i class="far fa-circle nav-icon"></i>
+                              <a href="/transactions/create" class="nav-link">
+                                  <i class="fas fa-plus-circle fa-fw nav-icon"></i>
                                   <p>Tambah</p>
                               </a>
                           </li>
                           <li class="nav-item">
-                              <a href="/transaction" class="nav-link">
-                                  <i class="far fa-circle nav-icon"></i>
+                              <a href="/transactions" class="nav-link">
+                                  <i class="fas fa-eye fa-fw nav-icon"></i>
                                   <p>Lihat</p>
                               </a>
                       </ul>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-copy"></i>
+                        <i class="nav-icon fas fa-users fa-fw" style="color: #C1ECF7"></i>
                         <p>
                             Customer
                             <i class="fas fa-angle-left right"></i>
@@ -81,21 +81,21 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/customer/add" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                            <a href="/customers/create" class="nav-link">
+                                <i class="fas fa-plus-circle fa-fw nav-icon"></i>
                                 <p>Tambah</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/customer" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                            <a href="/customers" class="nav-link">
+                                <i class="fas fa-eye fa-fw nav-icon"></i>
                                 <p>Lihat</p>
                             </a>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-copy"></i>
+                        <i class="nav-icon fas fa-cubes fa-fw" style="color: #915619"></i>
                         <p>
                             Barang
                             <i class="fas fa-angle-left right"></i>
@@ -104,21 +104,21 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/stuff/add" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                            <a href="/stuffs/create" class="nav-link">
+                                <i class="fas fa-plus-circle fa-fw nav-icon"></i>
                                 <p>Tambah</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/stuff" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                            <a href="/stuffs" class="nav-link">
+                                <i class="fas fa-eye fa-fw nav-icon"></i>
                                 <p>Lihat</p>
                             </a>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-copy"></i>
+                        <i class="nav-icon far fa-list-alt fa-fw" style="color: #E7D782"></i>
                         <p>
                             Kategori
                             <i class="fas fa-angle-left right"></i>
@@ -127,21 +127,21 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/category/add" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                            <a href="/categories/create" class="nav-link">
+                                <i class="fas fa-plus-circle fa-fw nav-icon"></i>
                                 <p>Tambah</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/category" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                            <a href="/categories" class="nav-link">
+                                <i class="fas fa-eye fa-fw nav-icon"></i>
                                 <p>Lihat</p>
                             </a>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-copy"></i>
+                        <i class="nav-icon fas fa-user-tie fa-fw" style="color: #869D88"></i>
                         <p>
                             User
                             <i class="fas fa-angle-left right"></i>
@@ -150,14 +150,14 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/user/add" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                            <a href="/users/create" class="nav-link">
+                                <i class="fas fa-plus-circle fa-fw nav-icon"></i>
                                 <p>Tambah</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/user" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                            <a href="/users" class="nav-link">
+                                <i class="fas fa-eye fa-fw nav-icon"></i>
                                 <p>Lihat</p>
                             </a>
                     </ul>

@@ -4,6 +4,6 @@
 
 @section('content')
 
-Halaman add customer
+
 
 @endsection

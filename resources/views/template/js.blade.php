@@ -21,3 +21,11 @@
 <script src="/admin/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/admin/dist/js/pages/dashboard2.js"></script>
+
+<script src="/admin/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<!-- Page specific script -->
+<script>
+$(function () {
+  bsCustomFileInput.init();
+});
+</script>
