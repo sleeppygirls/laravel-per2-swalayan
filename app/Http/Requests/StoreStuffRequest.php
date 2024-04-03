@@ -22,7 +22,12 @@ class StoreStuffRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'id' => 'required',
+            'name' => 'required',
+            'price' => 'required',
+            'unit' => 'required',
+            'price' => 'required',
+            'id_category' =>'required',
         ];
     }
 }

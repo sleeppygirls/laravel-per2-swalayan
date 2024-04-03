@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
 
+use Illuminate\Support\Facades\Storage;
 class UserController extends Controller
 {
     /**
@@ -13,10 +14,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::all();
+        $user = User::all();
 
         return view('user.list', [
-            'data' => $users
+            'data' => $user
         ]);
     }
 
@@ -33,9 +34,14 @@ class UserController extends Controller
      */
     public function store(StoreUserRequest $request)
     {
+        $path = $request->file('file')->store('avatar');
+        $request->merge($request->all());
+
         User::create($request->all());
 
-        return redirect('/users');
+        return redirect('/users')->with([
+            'mess' => 'Data Berhasil Disimpan',
+        ]);
     }
 
     /**
@@ -64,7 +70,9 @@ class UserController extends Controller
         $user->fill($request->all());
         $user->save();
 
-        return redirect('/users');
+        return redirect('/users')->with([
+            'mess' => 'Data Berhasil Disimpan',
+        ]);
     }
 
     /**
@@ -74,6 +82,8 @@ class UserController extends Controller
     {
         $user->delete();
 
-        return redirect('/users');
+        return redirect('/users')->with([
+            'mess' => 'Data Berhasil Dihapus',
+        ]);
     }
 }

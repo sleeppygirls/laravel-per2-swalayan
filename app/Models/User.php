@@ -11,9 +11,10 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
+    
     protected $table = 'users';             // memanggil nama table
-    protected $primaryKey = 'id';    // primary key ny
-    protected $keyType = 'string';              // merubah type data agar terpanggil
+    protected $primaryKey = 'id';           // primary key ny
+    protected $keyType = 'string';          // merubah type data agar terpanggil
     /**
      * The attributes that are mass assignable.
      *
@@ -21,11 +22,10 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'id',
+        'avatar',
         'name',
         'email',
         'password',
-        'password',
-        'level'
     ];
 
     /**
@@ -47,4 +47,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function transaction() {
+        return $this->hasMany(Transaction::class, 'id_user', 'id');
+    }
 }

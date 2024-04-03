@@ -21,4 +21,12 @@ class DetailTransaction extends Model
         'price',
         'discount',
     ];
+
+    public function stuff() {
+        return $this->hasOne(Stuff::class, 'id', 'id_stuff');
+    }
+
+    public function transaction() {
+        return $this->hasMany(Transaction::class, 'nota', 'nota');
+    }
 }

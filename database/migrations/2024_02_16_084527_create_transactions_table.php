@@ -16,6 +16,7 @@ return new class extends Migration
             $table->date('date')->nullable();
             $table->string('id_user')->nullable();
             $table->string('id_customer')->nullable();
+            $table->string('pembeli')->nullable();
             $table->timestamps();
         });
     }

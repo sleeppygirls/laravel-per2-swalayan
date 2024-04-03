@@ -18,4 +18,8 @@ class Category extends Model
         'name',
         'status'
     ];
+
+    public function stuff() {
+        return $this->hasMany(Stuff::class, 'id_stuff', 'id');
+    }
 }
