@@ -118,6 +118,7 @@ class ApiController extends Controller
 
     function saveTransaction(Request $req)
     {
+
         try {
             $nota = Str::random(10);
 
