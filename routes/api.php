@@ -15,13 +15,25 @@ use App\Http\Controllers\ApiController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::middleware(['auth:sanctum'])->group(function () {
+
+    Route::get('auth', [ApiController::class, 'auth']);
+
+Route::post('login', [ApiController::class, 'login']);
 
 Route::get('/stuffs', [ApiController::class, 'stuff']);                    // Mengambil semua data
 Route::post('/stuffs', [ApiController::class, 'stuffAdd']);                 // Menyimpan data baru
-Route::post('/stuffs/{stuff}', [ApiController::class, 'stuffUpdate']);     // update data
-Route::get('/stuffs/{stuff}', [ApiController::class, 'stuffDelete']);      // Menghapus data
+Route::put('/stuffs/{stuff}', [ApiController::class, 'stuffUpdate']);     // update data
+Route::delete('/stuffs/{stuff}', [ApiController::class, 'stuffDelete']);      // Menghapus data
+
+Route::post('/transaction/save', [ApiController::class, 'saveTransaction']);
+
+});
+
+Route::post('login', [ApiController::class, 'login']);
 
 
